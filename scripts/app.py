@@ -10,8 +10,9 @@ def read_numbers(file_path):
         
     except FileNotFoundError:
         print(f"Error: File {file_path} not found.")
-        return none 
+        return None
     
+
     if __name__ == "__main__":
         parser = argparse.ArgumentParser(description="sum num from a datasets file.")
         parser.add_argument('dataset_path', type=str, help= 'path to the dataset ')
